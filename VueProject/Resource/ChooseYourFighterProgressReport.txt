@@ -1,0 +1,35 @@
+**********
+***DONE***
+**********
+
+08/08/2022
+
+- database created
+- mock data created (needs more examples)
+- html.Example reconfigured into a VUEX project
+
+08/09/2022
+
+- spring boot dependancies located and added in pom.xml
+- spring jdbc dependancies located and added in pom.xml
+- created fighter data model
+- created fighter controller
+- created getAllFighters RequestMapping method
+- created getAllFighters JDBC SQL method
+- successful get request tested in PostMan for all fighters
+
+***********
+***TO-DO***
+***********
+
+08/09/2022
+
+
+- return and display data in JavaScript front-end
+
+                                <!-- <p> Cry </p>
+                                <p> Salt +3 </p>
+                                <p> XL Soy </p>
+                                <p class="desc"> 
+                                    Nobody nose why Madge cries...
+                                </p> -->

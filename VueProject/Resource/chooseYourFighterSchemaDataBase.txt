@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS fighter;
+
+CREATE TABLE fighter(
+	fighter_id serial PRIMARY KEY,
+	fighter_name char(128) NOT NULL,
+	fighter_genre char(128) NOT NULL,
+	ability_1 char(128) NOT NULL,
+	ability_2 char(128) NOT NULL,
+	ability_3 char(128) NOT NULL,
+	description char(1250)
+
+--CONSTRAINT FK_fighter_genre_id REFERENCES fighter_genre(fighter_genre_id)
+);
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description) 
+VALUES ('Ole'' Sniffle', 'insect', 'Impressive Stinky', 'Aroma +3', 'Pick',
+	   'Originally she began as a thought.  ''"My brain itches.''"Over time Ole'' Sniffles manifested 
+		physically due to the obsession of her host.  "Does anybody smell that?"  The human mind is considered 
+		to be a place of imagination, but our thoughts are more than mere 
+		electrical impulse.  They have the power to bring the imagined intoreality.  
+		Now the worm has escaped the twisted labyrinth of the human 
+		mind and has began to emerge from the nose.');
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
