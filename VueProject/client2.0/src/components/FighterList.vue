@@ -40,6 +40,9 @@ export default ({
 </script>
 
 <style scoped>
+    h1{
+        text-align: center;
+    }
     section{
         display: flex;
         overflow: auto;

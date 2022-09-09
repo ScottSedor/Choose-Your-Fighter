@@ -46,6 +46,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ScottDocs\SSProjects\chooseYourFighter\VueProject\Server\src\main\java\com\chooseYourFighter\.idea" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ChooseYourFighterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chooseYourFighter.demo.ChooseYourFighterApplication" />

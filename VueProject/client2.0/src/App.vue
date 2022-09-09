@@ -32,9 +32,11 @@ div.app-view-div{
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
+    "left-side-deck-nav main-content main-content main-content main-content"
     "footer footer footer footer footer";
   height: 100vh;
   width: 100vw;
+  position: absolute;
 }
 section.play-section{
     grid-area: play-section;

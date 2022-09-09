@@ -23,3 +23,21 @@ VALUES ('Ole'' Sniffle', 'insect', 'Impressive Stinky', 'Aroma +3', 'Pick',
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
 VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
