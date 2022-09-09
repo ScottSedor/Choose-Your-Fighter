@@ -1,5 +1,6 @@
 <template>
     <div class="fighter-list">
+        <nav class="genre-nav">GENRE NAV</nav>
         <h1>Displaying FighterList.vue</h1>
         <section>
             <div class="fighter-card-scroll" v-for="fighter in this.$store.state.fighterList" v-bind:key="fighter.id">
@@ -40,23 +41,46 @@ export default ({
 </script>
 
 <style scoped>
-    h1{
-        text-align: center;
-    }
-    section{
-        display: flex;
-        overflow: auto;
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    div.fighter-card-scroll{
-        margin: .5rem;
-        text-align: center;
-        border: black 2px solid;
-        border-radius: 5px;
-    }
-    img{
-        height: 10rem;
-        width: 10rem;  
-    }
+/* div.fighter-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll"
+    "card-scroll card-scroll card-scroll card-scroll card-scroll";
+} */
+h1{
+    text-align: center;
+
+}
+nav.genre-nav{
+    height: 10vh;
+    background-image: linear-gradient(to right, #decba470, #3E5151);
+    border-bottom: black 4px solid;
+}
+section{
+    display: flex;
+    overflow: auto;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+div.fighter-card-scroll{
+    grid-area: card-scroll;
+    margin: .5rem;
+    text-align: center;
+    border: black 2px solid;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+    border-radius: 5px;
+}
+img{
+    height: 10rem;
+    width: 10rem;  
+}
 </style>

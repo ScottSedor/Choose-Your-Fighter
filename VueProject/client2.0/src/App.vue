@@ -9,10 +9,9 @@
         <router-link to="Fighters">FIGHTERS</router-link>
       </nav>
       <section class="account-section">ACCOUNT/PROFILE</section> 
-      <nav class="genre-nav">GENRE NAV</nav>
       <nav class="left-side-deck-nav">LEFT SIDE/DECK NAV</nav>
       <div class="main-content-div">
-        <router-view />
+        <router-view/>
       </div>
     <footer class="footer">2022 Footer with some @ symbols and information</footer>    
   </div>
@@ -25,7 +24,7 @@ div.app-view-div{
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
     "play-section top-nav top-nav top-nav account-section"
-    "play-section genre-nav genre-nav genre-nav genre-nav"
+    "play-section main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
@@ -39,31 +38,39 @@ div.app-view-div{
   position: absolute;
 }
 section.play-section{
-    grid-area: play-section;
-    background-color: aqua;
+  grid-area: play-section;
+  background-image: linear-gradient(to right, #DECBA4, #3e5151d2);
+  border: black 2px solid;
+
 }
 nav.top-nav{
   grid-area: top-nav;
-  background-color: aquamarine;
+  background-image: linear-gradient(to right, #decba470, #3E5151);
+  border: black 2px solid;
+
 }
 section.account-section{
   grid-area: account-section;
-  background-color: rgb(238, 80, 80);
-}
-nav.genre-nav{
-  grid-area: genre-nav;
-  background-color: rgb(247, 123, 247);
+  background-image: linear-gradient(to right, #decba470, #3E5151);
+  border: black 2px solid;
+
 }
 nav.left-side-deck-nav{
   grid-area: left-side-deck-nav;
-  background-color: rgb(240, 240, 128);
+  background-image: linear-gradient(to right, #decba470, #3E5151);
+  border: black 2px solid;
+
 }
 .main-content-div{
-    grid-area: main-content;
-    background-color: blanchedalmond;
+  grid-area: main-content;
+  background-image: linear-gradient(to right, #b3a281, #2b3838);
+  border: black 2px solid;
+
 }
 footer{
   grid-area: footer;
-  background-color: rgb(43, 226, 119);
+  background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  border: black 2px solid;
+
 }
 </style>
