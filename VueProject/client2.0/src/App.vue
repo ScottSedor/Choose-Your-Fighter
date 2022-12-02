@@ -39,7 +39,7 @@ div.app-view-div{
 }
 section.play-section{
   grid-area: play-section;
-  background-image: linear-gradient(to right, #DECBA4, #3e5151d2);
+  background-image: linear-gradient(to right, #8a82af, #3e5151d2);
   border: black 2px solid;
 
 }
@@ -51,7 +51,7 @@ nav.top-nav{
 }
 section.account-section{
   grid-area: account-section;
-  background-image: linear-gradient(to right, #decba470, #3E5151);
+  background-image: linear-gradient(to right, #8a82af, #3e5151d2);
   border: black 2px solid;
 
 }

@@ -1,4 +1,5 @@
 <template>
+<!-- there is no home-component yet -->
     <home-component/>
 </template>
 

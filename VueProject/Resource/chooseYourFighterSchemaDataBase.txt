@@ -2,12 +2,12 @@ DROP TABLE IF EXISTS fighter;
 
 CREATE TABLE fighter(
 	fighter_id serial PRIMARY KEY,
-	fighter_name char(128) NOT NULL,
-	fighter_genre char(128) NOT NULL,
-	ability_1 char(128) NOT NULL,
-	ability_2 char(128) NOT NULL,
-	ability_3 char(128) NOT NULL,
-	description char(1250)
+	fighter_name varChar(128) NOT NULL,
+	fighter_genre varChar(128) NOT NULL,
+	ability_1 varChar(128) NOT NULL,
+	ability_2 varChar(128) NOT NULL,
+	ability_3 varChar(128) NOT NULL,
+	description varChar(1250)
 
 --CONSTRAINT FK_fighter_genre_id REFERENCES fighter_genre(fighter_genre_id)
 );
@@ -22,22 +22,22 @@ VALUES ('Ole'' Sniffle', 'insect', 'Impressive Stinky', 'Aroma +3', 'Pick',
 		mind and has began to emerge from the nose.');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
 
 INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...')
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');

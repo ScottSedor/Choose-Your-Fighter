@@ -2,14 +2,14 @@
     <div class="fighter-list">
         <nav class="genre-nav">GENRE NAV
             <section class="fighter-genres">
-                <button @click="setGenreInsect()">Insect</button>
+                <router-link to="InsectFighters">Insect</router-link>
                 <h3>Cat</h3>
                 <h3>Abyssal</h3>
             </section>
         </nav>
         <h1>Displaying FighterList.vue</h1>
         <section class="scroll">
-            <div class="fighter-card-scroll" v-for="fighter in filterFighterList" v-bind:key="fighter.id">
+            <div class="fighter-card-scroll" v-for="fighter in this.$store.state.fighterList" v-bind:key="fighter.id">
                 <img src="..\assets\secondLifeNoseWorm.jpg" alt="">
                 <p>{{fighter.fighter_name}}</p>
             </div>
@@ -17,7 +17,7 @@
         <!-- A list displaying current player's fighters will be added here -->
         <h1>Displaying PlayerFighterList</h1>
         <section class="scroll">
-            <div class="fighter-card-scroll" v-for="fighter in filterFighterList" v-bind:key="fighter.id">
+            <div class="fighter-card-scroll" v-for="fighter in this.$store.state.fighterList" v-bind:key="fighter.id">
                 <img src="..\assets\secondLifeNoseWorm.jpg" alt="">
                 <p>{{fighter.fighter_name}}</p>
             </div>
@@ -29,44 +29,25 @@
 
 import fighterService from "@/services/fighterService.js";
 
-export default {
+export default ({
     name: "fighter-list",
     data(){
         return{
-            fighterList: [],
-            fighter_genre: ''
+        insectList: []
         }
     },
     methods: {
-        setGenreInsect(){
-            // console.log('CLICKED');
-            this.fighter_genre = 'insect';
-        },
         getFighterList(){
             fighterService.getAllFighters().then(response => {
-                // this.$store.commit("SET_FIGHTER_LIST", response.data);
-                this.fighterList = response.data;
+                this.$store.commit("SET_FIGHTER_LIST", response.data);
             });
         },
+        //  method for filtering fighterList by genre 
     },
     created(){
-         this.getFighterList();
+        this.getFighterList();
     },
-    computed: {
-        filterFighterList(){
-            // console.log("filtering")
-            return this.fighterList.filter((element) => {
-                // console.log(element.fighter_genre, this.fighter_genre);
-                if(this.fighter_genre == ''){
-                    return true;
-                }
-                else {
-                    return (element.fighter_genre == this.fighter_genre);
-                }
-            })
-        }
-    }
-}    
+})
 
 </script>
 
@@ -92,7 +73,7 @@ h1{
 }
 nav.genre-nav{
     height: 10vh;
-    background-image: linear-gradient(to right, #decba470, #3E5151);
+    background-image: linear-gradient(to right, #b0dea470, #3e5144);
     border-bottom: black 4px solid;
 }
 section.scroll{

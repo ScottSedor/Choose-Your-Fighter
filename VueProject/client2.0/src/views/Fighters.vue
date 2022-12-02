@@ -8,8 +8,8 @@ import FighterList from '@/components/FighterList.vue'
 export default ({
     name: 'Fighters',
     components: {
-        FighterList
-    }
+        FighterList,
+    },
 })
 </script>
 

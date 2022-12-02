@@ -54,7 +54,7 @@
   <component name="RunManager">
     <configuration name="ChooseYourFighterApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.chooseYourFighter.demo.ChooseYourFighterApplication" />
-      <module name="demo" />
+      <module name="Server" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.chooseYourFighter.demo.*" />
