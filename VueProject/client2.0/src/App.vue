@@ -23,8 +23,8 @@ div.app-view-div{
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas: 
-    "play-section top-nav top-nav top-nav account-section"
-    "play-section main-content main-content main-content main-content"
+    "top-nav top-nav top-nav top-nav account-section"
+    "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
     "left-side-deck-nav main-content main-content main-content main-content"
@@ -39,19 +39,19 @@ div.app-view-div{
 }
 section.play-section{
   grid-area: play-section;
-  background-image: linear-gradient(to right, #8a82af, #3e5151d2);
+  background: rgb(75, 72, 72);
   border: black 2px solid;
 
 }
 nav.top-nav{
   grid-area: top-nav;
-  background-image: linear-gradient(to right, #decba470, #3E5151);
+  background: rgb(56, 54, 54);
   border: black 2px solid;
 
 }
 section.account-section{
   grid-area: account-section;
-  background-image: linear-gradient(to right, #8a82af, #3e5151d2);
+  background: rgb(37, 37, 37);
   border: black 2px solid;
 
 }
@@ -59,13 +59,14 @@ nav.left-side-deck-nav{
   grid-area: left-side-deck-nav;
   background-image: linear-gradient(to right, #decba470, #3E5151);
   border: black 2px solid;
+  padding-bottom: 10rem;
 
 }
 .main-content-div{
   grid-area: main-content;
   background-image: linear-gradient(to right, #b3a281, #2b3838);
   border: black 2px solid;
-
+  padding-bottom: 10rem;
 }
 footer{
   grid-area: footer;

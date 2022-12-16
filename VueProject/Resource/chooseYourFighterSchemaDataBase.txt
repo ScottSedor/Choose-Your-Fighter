@@ -7,37 +7,38 @@ CREATE TABLE fighter(
 	ability_1 varChar(128) NOT NULL,
 	ability_2 varChar(128) NOT NULL,
 	ability_3 varChar(128) NOT NULL,
-	description varChar(1250)
+	description varChar(1250),
+	avatar text NOT NULL
 
 --CONSTRAINT FK_fighter_genre_id REFERENCES fighter_genre(fighter_genre_id)
 );
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description) 
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar) 
 VALUES ('Ole'' Sniffle', 'insect', 'Impressive Stinky', 'Aroma +3', 'Pick',
 	   'Originally she began as a thought.  ''"My brain itches.''"Over time Ole'' Sniffles manifested 
 		physically due to the obsession of her host.  "Does anybody smell that?"  The human mind is considered 
 		to be a place of imagination, but our thoughts are more than mere 
 		electrical impulse.  They have the power to bring the imagined intoreality.  
 		Now the worm has escaped the twisted labyrinth of the human 
-		mind and has began to emerge from the nose.');
+		mind and has began to emerge from the nose.', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Kix', 'cat', 'Kick', 'Shoot Style +3', 'Elasticity', 'Armed with legs', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');
 
-INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description)
-VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...');
+INSERT INTO fighter (fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar)
+VALUES ('Madge', 'cat', 'Cry', 'Salt +3', 'XL Soy', 'Nobody knows why Madge cries...', '..\assets\secondLifeNoseWorm.jpg');

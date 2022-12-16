@@ -18,7 +18,7 @@ public class JdbcFighterDao implements FighterDao {
         this.jdbcTemplate = jdbcTemplate;
     }
 
-    private static final String SQL_SELECT_ALL_FIGHTERS = "SELECT fighter_id, fighter_name, fighter_genre, ability_1, ability_2, ability_3, description " +
+    private static final String SQL_SELECT_ALL_FIGHTERS = "SELECT fighter_id, fighter_name, fighter_genre, ability_1, ability_2, ability_3, description, avatar " +
                                                           "FROM fighter ";
 
     @Override
@@ -39,7 +39,8 @@ public class JdbcFighterDao implements FighterDao {
                 rs.getString("ability_1"),
                 rs.getString("ability_2"),
                 rs.getString("ability_3"),
-                rs.getString("description"));
+                rs.getString("description"),
+                rs.getString("avatar"));
     }
 
 }

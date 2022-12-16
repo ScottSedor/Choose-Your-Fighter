@@ -2,7 +2,6 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/views/Home.vue'
 import Fighters from '@/views/Fighters.vue'
-import InsectFighters from '@/components/InsectFighters.vue'
 
 Vue.use(VueRouter)
 
@@ -17,12 +16,6 @@ const routes = [
     name: 'Fighters',
     component: Fighters,
   },
-  {
-    path: '/insectFighters',
-    name: 'InsectFighters',
-    component: InsectFighters,
-  }
-
 ]
 
 const router = new VueRouter({

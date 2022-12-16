@@ -8,10 +8,11 @@ public class Fighter {
     private String ability_2;
     private String ability_3;
     private String description;
+    private String avatar;
 
     //constructor for fighter
 
-    public Fighter(int fighter_id, String fighter_name, String fighter_genre, String ability_1, String ability_2, String ability_3, String description) {
+    public Fighter(int fighter_id, String fighter_name, String fighter_genre, String ability_1, String ability_2, String ability_3, String description, String avatar) {
         this.fighter_id = fighter_id;
         this.fighter_name = fighter_name;
         this.fighter_genre = fighter_genre;
@@ -19,6 +20,7 @@ public class Fighter {
         this.ability_2 = ability_2;
         this.ability_3 = ability_3;
         this.description = description;
+        this.avatar = avatar;
     }
 
     //getters for fighter instance variables
@@ -79,5 +81,13 @@ public class Fighter {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getAvatar() {
+        return avatar;
+    }
+
+    public void setAvatar(String avatar) {
+        this.avatar = avatar;
     }
 }

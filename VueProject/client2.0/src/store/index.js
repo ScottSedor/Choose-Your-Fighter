@@ -20,7 +20,8 @@ export default new Vuex.Store({
       ability_1: '',
       ability_2: '',
       ability_3: '',
-      description: ''
+      description: '',
+      avatar: ''
     }
   },
   mutations: {
